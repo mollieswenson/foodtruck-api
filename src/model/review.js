@@ -8,7 +8,7 @@ let ReviewSchema = new Schema({
     required: true
   },
   text: String,
-  recommended: String,
+  recommended: Boolean,
   foodtruck: {
     type: Schema.Types.ObjectId,
     ref: 'FoodTruck',
